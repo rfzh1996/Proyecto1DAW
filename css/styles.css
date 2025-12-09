@@ -1,14 +1,13 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background: #e8f5e9;
   color: #333;
 }
 
 header {
-  background: #2c3e50;
+  background: #1b5e20;
   color: white;
   padding: 1em;
   text-align: center;
@@ -45,21 +44,103 @@ section {
 }
 
 footer {
-  background: #2c3e50;
+  background: #1b5e20;
   color: white;
   text-align: center;
   padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
+/* Slideshow */
+.slide {
+  display: none;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.slideshow {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+.slide.active {
+  display: block;
+  align-content: center;
+}
+
+/*Estilos Botones*/
+.btn {
+  background: #2c3e50;
+  color: white;
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+.btn:hover {
+  background: #4e6b88;
+}
+
+/* Acordeón */
+.accordion-header {
+  background: #ddd;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.accordion-panel {
+  display: none;
+  padding: 10px;
+  background: #fafafa;
+}
+.accordion-item.open .accordion-panel {
+  display: block;
+}
+
+/*Recuadro formulario*/
+.contacto-recuadro {
+  background: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  border: 1px solid #ccc;
+}
+
+/*Inputs ordenados */
+.contacto-recuadro input,
+.contacto-recuadro textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 2px 0 4px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contacto-recuadro label {
+  display: block;
+  margin-top: 0;
+  font-weight: bold;
+}
+/* Errores formulario */
+.error {
+  display: block;
+  color: red;
+  margin-bottom: 10px;
+}
 /* Responsividad */
 @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
+  nav ul { 
+    flex-direction: column; 
   }
-  nav ul li {
-    margin: 10px 0;
+  nav ul li { 
+    margin: 10px 0; 
   }
 }

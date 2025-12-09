@@ -21,17 +21,42 @@
 
   <main>
     <section>
-      <article>
-        <h2>Galería</h2>
-        <p>
-          Aquí se mostrarán imágenes y ejemplos de energías renovables como paneles solares, aerogeneradores y centrales hidroeléctricas.
-        </p>
-      </article>
+      <h2>Slideshow</h2>
+      <div class="slideshow">
+        <img src="img/Panel_Solar.jpeg" alt="Paneles solares" class="slide active">
+        <img src="img/Eolica.jpeg" alt="Aerogeneradores" class="slide">
+        <img src="img/Hidroelectrica.jpg" alt="Hidroeléctrica" class="slide">
+        <button class="btn prev">Anterior</button>
+        <button class="btn next">Siguiente</button>
+      </div>
+    </section>
+
+    <section class="accordion">
+      <h2>Acordeón informativo</h2>
+      <div class="accordion-item">
+        <button class="accordion-header"><img src="img/LogoSolar.svg" alt="Energia_solar">Energía Solar</button>
+        <div class="accordion-panel">
+          <p>Convierte la radiación solar en electricidad mediante células fotovoltaicas.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header"><img src="img/LogoEolica.svg" alt="Energia_Eolica">Energía Eólica</button>
+        <div class="accordion-panel">
+          <p>Usa la fuerza del viento para mover turbinas y generar electricidad.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header"><img src="img/LogoHidro.svg" alt="Energia_Hidro">Energía Hidroeléctrica</button>
+        <div class="accordion-panel">
+          <p>Aprovecha el flujo de agua para accionar generadores eléctricos.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Energías Renovables</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
